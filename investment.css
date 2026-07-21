@@ -1,0 +1,365 @@
+/* =====================================
+   GOOGLE FONTS
+===================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+/* =====================================
+   RESET
+===================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Open Sans',sans-serif;
+    overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Cormorant Garamond',serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero-section{
+    height:250px;
+    overflow:hidden;
+}
+
+.hero-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+@media (max-width:991px){
+
+    .hero-img{
+        height:240px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .hero-img{
+        height:180px;
+    }
+
+}
+
+/* =====================================
+   PAGE TITLE
+===================================== */
+
+.page-title-section{
+    background:#F7F5F0;
+    padding:15px 0;
+}
+
+.page-title{
+    font-family:'Cinzel',serif;
+    font-size:30px;
+    font-weight:500;
+    color:#2f3b63;
+    letter-spacing:1px;
+    margin:0;
+    text-align:left;
+}
+
+@media (max-width:768px){
+
+    .page-title{
+        font-size:26px;
+    }
+
+}
+
+/* =====================================
+   CONTENT SECTION
+===================================== */
+
+.content-section{
+    background:#fff;
+}
+
+.content-section p{
+    font-size:15px;
+    line-height:1.7;
+    color:#333;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.content-section a{
+    color:#1f6fb2;
+}
+
+.content-section a:hover{
+    text-decoration:underline;
+}
+
+.content-section ul{
+    list-style:disc;
+    padding-left:25px;
+}
+
+.content-section li{
+    font-size:15px;
+    line-height:1.8;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+/* =====================================
+   DIVIDER
+===================================== */
+
+.custom-divider{
+    position:relative;
+    width:100%;
+    height:2px;
+    margin-top:30px;
+    background:#0b4d6d;
+}
+
+.custom-divider::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:2px;
+    transform:translateX(-50%);
+    border-left:18px solid transparent;
+    border-right:18px solid transparent;
+    border-top:18px solid #0b4d6d;
+}
+/* =====================================
+   ADDITIONAL SERVICES
+===================================== */
+
+.services-links-section{
+    background:#fff;
+    padding:70px 0;
+}
+
+/* Heading */
+
+.services-heading{
+    font-family:'Cinzel', serif;
+    font-size:42px;
+    font-weight:600;
+    color:#111;
+    margin-bottom:35px;
+}
+
+/* Service Cards */
+
+.service-link{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    width:100%;
+    height:54px;
+
+    margin-bottom:10px;
+    padding:0 20px;
+
+    background:#0d4b6c;
+    color:#fff;
+
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+
+    border-radius:4px;
+    transition:all .35s ease;
+}
+
+.service-link i{
+    font-size:18px;
+}
+
+/* Hover */
+
+.service-link:hover{
+    background:#97cf28;
+    color:#fff;
+    transform:translateX(8px);
+}
+
+/* Active Card */
+
+.service-link.active-card{
+    background:#b7cde4;
+    color:#fff;
+}
+
+/* =====================================
+   IMAGE
+===================================== */
+
+.service-image{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    border-radius:4px;
+    text-decoration:none;
+}
+
+.service-image img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+    transition:.4s ease;
+}
+
+.service-image:hover img{
+    transform:scale(1.08);
+}
+
+/* =====================================
+   IMAGE OVERLAY
+===================================== */
+
+.image-overlay{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(8,35,75,.45);
+    text-align:center;
+    transition:.35s ease;
+}
+
+.service-image:hover .image-overlay{
+    background:rgba(8,35,75,.30);
+}
+
+.image-overlay h3{
+    color:#fff;
+    font-family:'Cinzel', serif;
+    font-size:36px;
+    font-weight:600;
+    line-height:1.2;
+    margin:0;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width:991px){
+
+    .services-links-section{
+        padding:60px 0;
+    }
+
+    .services-heading{
+        font-size:34px;
+    }
+
+    .service-link{
+        height:52px;
+        font-size:17px;
+    }
+
+    .service-image{
+        margin-top:30px;
+    }
+
+    .image-overlay h3{
+        font-size:30px;
+    }
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width:767px){
+
+    .services-links-section{
+        padding:50px 0;
+    }
+
+    .services-heading{
+        font-size:28px;
+        margin-bottom:25px;
+    }
+
+    .service-link{
+        justify-content:flex-start;
+        height:55px;
+        font-size:16px;
+        padding:0 20px;
+    }
+
+    .service-link i{
+        font-size:16px;
+    }
+
+    .service-image{
+        margin-top:25px;
+    }
+
+    .service-image img{
+        height:260px;
+    }
+
+    .image-overlay h3{
+        font-size:28px;
+    }
+
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width:576px){
+
+    .services-heading{
+        font-size:24px;
+        line-height:1.4;
+    }
+
+    .service-link{
+        font-size:15px;
+        padding:0 15px;
+    }
+
+    .image-overlay h3{
+        font-size:22px;
+    }
+
+}
+
+
+  

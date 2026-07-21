@@ -1,0 +1,255 @@
+/* ==========================
+   PAGE TITLE
+========================== */
+.hero-section{
+    height:250px;
+    overflow:hidden;
+}
+
+.hero-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.page-title-section{
+    background:#F7F5F0;
+    padding:1px 0;
+}
+
+.page-title{
+    font-family:'Cinzel', serif;
+    font-size:30px;
+    font-weight:500;
+    color:#2f3b63;
+    letter-spacing:1px;
+    margin:0;
+}
+
+@media (max-width:991px){
+    .page-title{
+        text-align:left;
+    }
+}
+
+@media (max-width:768px){
+    .page-title{
+        text-align:left;
+    }
+}
+
+@media (max-width:576px){
+    .page-title{
+        text-align:left;
+    }
+}
+
+
+/* ===========================
+   CONTENT SECTION
+=========================== */
+
+.content-section{
+    background:#fff;
+}
+
+.content-section .col-lg-10{
+    margin:0 auto;
+}
+
+.content-section p{
+    font-size:15px;
+    line-height:1.7;
+    color:#333;
+    font-weight:600;
+}
+
+.content-section a{
+    color:#1f6fb2;
+    text-decoration:none;
+}
+
+.content-section a:hover{
+    text-decoration:underline;
+}
+
+.content-section ul{
+    padding-left:25px;
+    list-style:disc;
+}
+
+.content-section li{
+    font-size:15px;
+    line-height:1.8;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+.page-title-section .container,
+.content-section .container{
+    padding-left: var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+.custom-divider{
+    position:relative;
+    width:100%;
+    height:2px;
+    background:#0b4d6d;
+    margin-top:30px;
+    margin-bottom:0;
+}
+
+.custom-divider::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:2px;
+    transform:translateX(-50%);
+    border-left:18px solid transparent;
+    border-right:18px solid transparent;
+    border-top:18px solid #0b4d6d;
+}
+
+
+/* ==========================
+   ADDITIONAL SERVICES
+========================== */
+
+.services-links-section{
+    background:#fff;
+    padding:70px 0;
+}
+
+.services-heading{
+    font-family:'Cinzel', serif;
+    font-size:42px;
+    font-weight:600;
+    color:#111;
+    margin-bottom:35px;
+}
+
+.service-link{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    width:100%;
+    padding:18px 20px;
+    margin-bottom:12px;
+    background:#0d4b6c;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.service-link:hover{
+    background:#97cf28;
+    color:#fff;
+}
+
+.service-link.active-card{
+    background:#b8cde5;
+    color:#fff;
+}
+
+/* */
+
+.service-image{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.service-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 33, 68, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-overlay h3{
+    color: #fff;
+    font-family: "Cinzel", serif;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:991px){
+
+    .services-heading{
+        font-size:34px;
+    }
+
+    .service-link{
+        height:52px;
+        font-size:17px;
+    }
+
+    .service-image{
+        margin-top:30px;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .services-links-section{
+        padding:50px 0;
+    }
+
+    .services-heading{
+        font-size:28px;
+        margin-bottom:25px;
+    }
+
+    .service-link{
+        justify-content:flex-start;
+        padding:0 20px;
+        height:55px;
+        font-size:16px;
+    }
+
+    .service-link i{
+        font-size:18px;
+    }
+
+    .service-image{
+        margin-top:25px;
+    }
+
+    .service-image img{
+        height:260px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .services-heading{
+        font-size:24px;
+        line-height:1.4;
+    }
+
+    .service-link{
+        font-size:15px;
+        padding:0 15px;
+    }
+
+}

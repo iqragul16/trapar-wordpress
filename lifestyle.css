@@ -1,0 +1,722 @@
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family:'Open Sans',sans-serif;
+    overflow-x:hidden;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Cormorant Garamond',serif;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+
+/* ===========================
+   HERO IMAGE
+=========================== */
+
+.hero-section{
+    height:300px;
+    overflow:hidden;
+}
+
+.hero-img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    object-position:center;
+}
+
+
+/* ===========================
+   PAGE TITLE
+=========================== */
+
+.page-title-section{
+
+    background:#F7F5F0;
+    padding:10px 0;
+
+}
+
+
+.page-title{
+
+    font-family:'Cinzel',serif;
+
+    font-size:35px;
+
+    font-weight:500;
+
+    color:#2f3b63;
+
+    letter-spacing:1px;
+
+    margin:0;
+
+}
+
+
+/* ===========================
+   CONTENT SECTION
+=========================== */
+
+.content-section{
+
+    background:#fff;
+
+}
+
+
+.content-section .col-lg-10{
+
+    margin:auto;
+
+}
+
+
+.content-section p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    color:#333;
+
+    font-weight:600;
+
+}
+
+
+.content-section a{
+
+    color:#1f6fb2;
+
+}
+
+
+.content-section ul{
+
+    padding-left:25px;
+
+    list-style:disc;
+
+}
+
+
+.content-section li{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+.custom-divider{
+
+    position:relative;
+
+    width:100%;
+
+    height:2px;
+
+    background:#0b4d6d;
+
+    margin-top:30px;
+
+}
+
+
+.custom-divider::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:2px;
+
+    transform:translateX(-50%);
+
+
+    border-left:18px solid transparent;
+
+    border-right:18px solid transparent;
+
+    border-top:18px solid #0b4d6d;
+
+}
+/* ===========================
+   ADDITIONAL SERVICES
+=========================== */
+
+
+.services-links-section{
+
+    background:#fff;
+
+    padding:70px 0;
+
+}
+
+
+/* Heading */
+
+.services-heading{
+
+    font-family:'Cinzel',serif;
+
+    font-size:42px;
+
+    font-weight:600;
+
+    color:#111;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ===========================
+   SERVICE LINKS
+=========================== */
+
+
+.service-link{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    gap:12px;
+
+
+    width:100%;
+
+    height:54px;
+
+
+    margin-bottom:10px;
+
+
+    background:#0d4b6c;
+
+    color:#fff;
+
+
+    font-size:18px;
+
+    font-weight:500;
+
+
+    border-radius:4px;
+
+text-decoration: none;
+    transition:.3s ease;
+
+}
+
+
+
+.service-link i{
+
+    font-size:20px;
+
+}
+
+
+/* Hover */
+
+.service-link:hover{
+
+    background:#97cf28;
+
+    color:#fff;
+
+    transform:translateX(8px);
+
+}
+
+
+
+/* Active Service */
+
+.service-link.active,
+.active-card{
+
+    background:#b7cde4;
+
+    color:#fff;
+
+}
+
+
+
+/* ===========================
+   SERVICE IMAGE
+=========================== */
+
+
+.service-image{
+
+    position:relative;
+
+    display:block;
+
+    overflow:hidden;
+
+    border-radius:4px;
+
+}
+
+
+
+.service-image img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.4s ease;
+
+}
+
+
+
+.service-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+
+/* ===========================
+   IMAGE OVERLAY
+=========================== */
+
+
+.image-overlay{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+
+    width:100%;
+
+    height:100%;
+
+
+    background:rgba(8,35,75,.45);
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    transition:.3s ease;
+
+}
+
+
+
+.image-overlay h3{
+
+    color:#fff;
+
+    font-family:'Cinzel',serif;
+
+    font-size:36px;
+
+    font-weight:600;
+
+    line-height:1.2;
+
+    margin:0;
+
+}
+
+
+
+.service-image:hover .image-overlay{
+
+    background:rgba(8,35,75,.30);
+
+}
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:991px){
+
+
+    .services-heading{
+
+        font-size:34px;
+
+    }
+
+
+    .service-link{
+
+        height:52px;
+
+        font-size:17px;
+
+    }
+
+
+    .image-overlay h3{
+
+        font-size:30px;
+
+    }
+
+
+    .service-image{
+
+        margin-top:30px;
+
+    }
+
+}
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:767px){
+
+
+    .services-links-section{
+
+        padding:50px 0;
+
+    }
+
+
+    .services-heading{
+
+        font-size:28px;
+
+        margin-bottom:25px;
+
+    }
+
+
+    .service-link{
+
+        justify-content:flex-start;
+
+        padding:0 20px;
+
+        height:55px;
+
+        font-size:16px;
+
+    }
+
+
+    .service-link i{
+
+        font-size:18px;
+
+    }
+
+
+    .service-image{
+
+        margin-top:25px;
+
+    }
+
+
+    .service-image img{
+
+        height:260px;
+
+    }
+
+
+    .image-overlay h3{
+
+        font-size:28px;
+
+    }
+
+}
+
+
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+
+@media(max-width:576px){
+
+
+    .services-heading{
+
+        font-size:24px;
+
+    }
+
+
+    .service-link{
+
+        font-size:15px;
+
+        padding:0 15px;
+
+    }
+
+
+    .image-overlay h3{
+
+        font-size:22px;
+
+    }
+
+}
+/* ===========================
+   CONTAINER SPACING
+=========================== */
+
+.container{
+
+    padding-left:20px;
+
+    padding-right:20px;
+
+}
+
+
+
+/* ===========================
+   STICKY CARD
+=========================== */
+
+
+.sticky-card{
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:991px){
+
+
+    .page-title{
+
+        font-size:30px;
+
+        text-align:left;
+
+    }
+
+
+    .hero-img{
+
+        height:250px;
+
+    }
+
+
+    .content-section p,
+    .content-section li{
+
+        font-size:14px;
+
+    }
+
+
+    .sticky-card{
+
+        position:static;
+
+        margin-top:30px;
+
+    }
+
+}
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:767px){
+
+
+    .page-title{
+
+        font-size:25px;
+
+        text-align:left;
+
+    }
+
+
+    .page-title-section{
+
+        padding:15px 0;
+
+    }
+
+
+    .hero-img{
+
+        height:220px;
+
+    }
+
+
+    .content-section{
+
+        padding-top:30px;
+
+        padding-bottom:30px;
+
+    }
+
+
+    .content-section p{
+
+        font-size:14px;
+
+        line-height:1.8;
+
+    }
+
+
+    .content-section li{
+
+        font-size:14px;
+
+    }
+
+
+    .custom-divider::after{
+
+        border-left-width:14px;
+
+        border-right-width:14px;
+
+        border-top-width:14px;
+
+    }
+
+}
+
+
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+
+@media(max-width:576px){
+
+
+    .page-title{
+
+        font-size:22px;
+
+    }
+
+
+    .hero-img{
+
+        height:180px;
+
+    }
+
+
+    .services-links-section{
+
+        padding:40px 0;
+
+    }
+
+
+}

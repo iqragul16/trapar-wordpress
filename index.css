@@ -1,0 +1,964 @@
+
+/* ==========================
+   COMMON CONTAINER
+========================== */
+
+.content-width{
+    width:90%;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+
+
+/* ==========================
+   HERO TITLE
+========================== */
+.hero{
+    height:600px;   /* Pehle agar 380px thi to ise kam kar do */
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.hero{
+    position:relative;
+}
+
+/* .hero-title{
+    position:absolute;
+    top:300px;               
+    left:50%;
+    transform:translateX(-50%);
+
+    display:inline-block;
+    background:rgba(0,0,0,.7);
+    padding:8px 25px;
+    z-index:10;
+} */
+ .hero-title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:rgba(0,0,0,.7);
+    padding:8px 20px;
+    z-index:10;
+    text-align:center;
+}
+
+.hero-title h1{
+    margin:0;
+    color:#fff;
+    font-family:'Cinzel', serif;
+    font-size:60px;
+    line-height:72px;
+    font-weight:400;
+    text-transform:uppercase;
+    white-space:nowrap;
+}
+
+/* ==========================
+   BLUE BAR
+========================== */
+
+.hero-bottom{
+    background:#004d73;
+    padding:4px 0;
+}
+
+.hero-bottom h2{
+    margin:0;
+    padding:0;
+
+    text-align:center;
+
+    font-family:'Cinzel', serif;
+    font-size:34px;
+    line-height:40px;
+    font-weight:400;
+
+    color:#fff;
+    text-transform:uppercase;
+}
+
+/* ==========================
+   INTRO
+========================== */
+
+.intro{
+    background:#dce8f2;
+    padding:60px 0;
+}
+
+.intro .content-width{
+    max-width:820px;
+    margin:auto;
+}
+
+.intro hr{
+    border:none;
+    height:2px;
+    background:#edf3f6;
+    margin-bottom:35px;
+}
+
+.intro p{
+    margin:0;
+
+    font-family:'Open Sans', sans-serif;
+    font-size:18px;
+    line-height:25px;
+    font-weight:500;
+
+    color:#111313;
+
+    font-style:italic;
+    text-align:justify;
+}
+
+
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media(max-width:992px){
+
+.hero{
+    height:450px;
+}
+
+.hero-title h1{
+    font-size:30px;
+    line-height:50px;
+    text-align: center;
+    white-space: nowrape;
+}
+
+.hero-bottom h2{
+    font-size:28px;
+    text-align: center;
+    
+}
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:767px){
+
+.hero{
+    height:450px;
+}
+
+.hero-title{
+    margin:0 auto;
+    top:250px;
+    padding:8px 15px;
+    width:290px;
+    max-width:90%;
+}
+
+.hero-title h1{
+    font-size:20px;
+    line-height:30px;
+    white-space:nowrape;
+    text-align: center;
+}
+
+.hero-bottom .content-width{
+    padding:10px 15px;
+}
+
+.hero-bottom h2{
+     width:220px;
+        margin:0 auto;
+
+        font-size:22px;
+        line-height:32px;
+
+        text-align:center;
+        white-space:normal;
+
+        word-break:normal;
+}
+
+.intro{
+    padding:40px 0;
+}
+
+.intro .content-width{
+    width:90%;
+}
+
+.intro p{
+    font-size:16px;
+    line-height:28px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /*==========================
+        ABOUT SECTION
+==========================*/
+.about-section .content-width{
+    display:flex;
+    align-items:flex-start;
+    gap:80px;
+}
+
+
+/* .about-image{
+    width:400px;
+    flex:none;
+} */
+.about-image{
+    flex:0 0 400px;
+}
+
+.about-image img{
+    width:100%;
+    display:block;
+}
+
+.about-text{
+    width:auto;
+    flex:1;
+    display:block !important;
+}
+
+
+.about-text h2{
+    display:block;
+    width:100%;
+
+    font-family:"Times New Roman", serif;
+    font-size:26px;
+    font-weight:400;
+    line-height:1.25;
+
+    margin:0 0 15px;
+}
+
+
+.about-text p{
+    display:block;
+    width:100%;
+
+    font-size:18px;
+    line-height:1.5;
+
+    margin:0 0 25px;
+}
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 992px){
+
+    .about-section{
+        padding:60px 0;
+    }
+
+    .about-section .content-width{
+        flex-direction:column;
+        gap:40px;
+        text-align:center;
+    }
+
+    .about-image{
+        flex:none;
+        width:100%;
+        max-width:500px;
+    }
+
+    .about-image img{
+        width:100%;
+        height:auto;
+    }
+
+    .about-content{
+        width:100%;
+    }
+
+    .about-content h2{
+        font-size:32px;
+    }
+
+    .about-content p{
+        font-size:18px;
+        line-height:1.7;
+    }
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+/* Mobile */
+@media (max-width: 768px){
+
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .about-image{
+        width: 100%;
+    }
+
+    .about-image img{
+        width: 100%;
+        display: block;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .about-content{
+        width: 100%;
+    }
+
+    .about-content h2{
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .about-content p{
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+}
+
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:480px){
+
+    .about-section{
+        padding:40px 15px;
+    }
+
+    .about-content h2{
+        font-size:22px;
+        line-height:1.4;
+    }
+
+    .about-content p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+}
+
+
+/* short Strip */
+/*==========================
+      PEACE STRIP
+==========================*/
+
+.peace-strip{
+    width:100%;
+    background:#0f4c6d;   /* Dark Blue */
+    padding:12px 20px;
+    margin-top:60px;      /* About section ke baad gap */
+}
+
+.peace-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.peace-strip h2{
+    color:#fff;
+    font-family:'Cinzel', serif;
+    font-size:22px;
+    font-weight:500;
+    letter-spacing:.5px;
+    text-align:center;
+    margin:0;
+}
+@media (max-width:768px){
+
+    .peace-strip{
+        padding:15px 20px;
+    }
+
+    .peace-container{
+        width:100%;
+    }
+
+    .peace-container h2{
+        font-size:24px;
+        line-height:1.3;
+        text-align:center;
+        font-family:'Cinzel', serif;
+        font-weight:400;
+        color:#fff;
+    }
+    
+
+}
+
+
+/*==========================
+    SERVICE SECTION
+==========================*/
+
+.service-section{
+    position: relative;
+    width: 100%;
+    padding: 80px 20px;
+    background: url("./service-img.jpeg") center center/cover no-repeat;
+}
+
+.service-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.12);
+}
+
+.service-container{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*==========================
+      TOP BOXES
+==========================*/
+
+.top-boxes{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.service-item{
+    width: 38%;
+    text-align: center;
+}
+
+.big-box{
+    background: rgba(0,0,0,0.82);
+    min-height: 110px;
+    padding-left:20px;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .4s;
+}
+
+.big-box p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+/*==========================
+        BUTTON
+==========================*/
+
+.service-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 15px;
+    min-width:250px;
+
+    background:rgba(0,0,0,.65);
+
+    border:2px solid #fff;
+    color:#fff;
+
+    font-size:18px;
+    text-transform:uppercase;
+    text-align:center;
+
+    transition:all .4s ease;
+}
+
+/* Hover on whole service box */
+
+.service-btn:hover{
+
+    background:#2b6585;
+
+    border-color:#fff;
+
+    color:#fff;
+
+}
+/*==========================
+      SMALL BOXES
+==========================*/
+
+.small-boxes{
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+    margin-top:70px;
+    flex-wrap:wrap;
+}
+
+.small-box{
+
+    flex:1;
+    min-width:220px;
+
+    padding:22px;
+
+    background:rgba(0,0,0,.55);
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    text-align:center;
+
+    font-size:17px;
+
+    text-transform:uppercase;
+
+    transition:all .4s ease;
+}
+
+/* Hover */
+
+.small-box:hover{
+
+    background:#6ea8cf;   /* Only background changes */
+
+    border-color:#fff;    /* Border stays white */
+
+    color:#fff;           /* Text stays white */
+
+}
+
+/* Optional: Box gets slightly darker */
+
+.service-item:hover .big-box{
+
+    background: rgba(0,0,0,.88);
+
+}
+
+
+/*==========================
+      MOBILE RESPONSIVE
+==========================*/
+
+@media (max-width:768px){
+
+    .service-section{
+        padding:60px 20px;
+        background-position:center;
+        background-size:cover;
+    }
+
+    .service-container{
+        width:100%;
+        max-width:100%;
+    }
+
+    .top-boxes{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+    }
+
+    .service-item{
+        width:100%;
+        max-width:360px;
+    }
+
+    .big-box{
+        width:100%;
+        min-height:170px;
+        padding:25px 20px;
+        background:rgba(0,0,0,.78);
+    }
+
+    .big-box p{
+        font-size:17px;
+        line-height:1.6;
+        text-align:center;
+    }
+
+    .service-btn{
+    display:inline-block;
+
+    padding:15px 18px;   /* Top-Bottom 10px | Left-Right 18px */
+
+    background:rgba(0,0,0,.55);
+    border:2px solid #fff;
+    color:#fff;
+
+    font-size:16px;
+    font-weight:500;
+    text-align:center;
+
+    min-width:unset;      /* Remove fixed width */
+    width:auto;           /* Text ke hisaab se width */
+
+    transition:.3s ease;
+}
+
+.button-wrapper{
+    display:flex;
+    justify-content:center;   /* Button center mein */
+    margin-top:15px;
+}
+
+    .service-btn:hover{
+        background:#2b6585;
+        border-color:#fff;
+        color:#fff;
+    }
+
+}
+
+
+
+/* last section */
+
+.about-section{
+    padding:70px 20px;
+}
+
+
+.about-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+
+.about-title{
+    font-family:'Cinzel',serif;
+    font-size:32px;
+    font-weight:400;
+}
+
+
+.about-intro{
+    margin-top:15px;
+    font-size:18px;
+    font-weight:600;
+    line-height:1.5;
+}
+
+
+
+.about-content{
+
+    display:flex;
+    gap:45px;
+    margin-top:50px;
+     align-items:flex-start;
+
+}
+
+
+
+.team-area{
+
+    width:70%;
+    display:flex;
+    gap:70px;
+
+}
+
+
+
+.member-card{
+
+      width:50%;
+    transition:.3s ease;
+
+}
+.member-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.member-card img{
+
+    width:100%;
+    height:200px;
+    object-fit:cover;
+
+}
+
+
+.member-card h3{
+
+    font-family:'Cinzel',serif;
+    font-size:22px;
+    font-weight:400;
+    margin-top:15px;
+
+}
+
+
+.member-card h4{
+
+    margin-top:35px;
+    font-weight:400;
+
+}
+
+
+.member-card p{
+
+    margin-top:35px;
+    font-size:18px;
+    line-height:1.5;
+
+}
+
+
+
+/* Contact */
+/* RIGHT CONTACT CARD */
+
+.contact-box{
+
+    width:350px;
+
+    background:#e7e7e7;
+
+    padding:25px;
+
+    align-self:flex-start;
+
+}
+
+
+/* Main heading */
+
+.contact-box h2{
+
+    font-family:'Cinzel', serif;
+
+    font-size:26px;
+
+    font-weight:400;
+
+    line-height:1.25;
+
+    color:#1b3045;
+
+    margin:0 0 5px;
+
+}
+
+
+/* Phone */
+
+.contact-box h3{
+
+    font-family:'Cinzel', serif;
+
+    font-size:25px;
+
+    font-weight:400;
+
+    color:#1b3045;
+
+    margin:0;
+
+}
+
+
+/* Email */
+
+.contact-box a{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#1675c1;
+
+    font-size:18px;
+
+    text-decoration:underline;
+
+}
+
+
+
+/* Address */
+
+.contact-box p{
+
+    margin-top:35px;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+    line-height:1.5;
+
+    color:#222;
+
+}
+
+
+
+/* Green button */
+
+.green-btn{
+
+    width:100%;
+
+    height:44px;
+
+    background:#95cf2b;
+
+    color:white;
+
+    border:none;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.green-btn:hover{
+
+    background:#00496b;
+
+}
+
+
+
+/* Customer heading */
+
+.customer-title{
+
+    margin-top:35px !important;
+
+    font-size:23px !important;
+
+    line-height:1.3 !important;
+
+}
+
+
+
+/* Blue button */
+
+.blue-btn{
+
+    width:100%;
+
+    height:44px;
+
+    margin-top:25px;
+
+    background:#00496b;
+
+    color:white;
+
+    border:none;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.blue-btn:hover{
+
+    background:#95cf2b;
+
+}
+
+
+
+
+@media (max-width: 767px){
+
+    .team-area{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .member-card{
+        width: 100%;
+    }
+
+    .contact-box{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+}
+@media (max-width: 991px){
+
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-area{
+        width: 100%;
+        order: 1;
+    }
+
+    .contact-box{
+        width: 100%;
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .member-card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

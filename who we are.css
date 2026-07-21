@@ -1,0 +1,576 @@
+/*==================================================
+                GOOGLE FONTS
+==================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+
+/*==================================================
+                PAGE TITLE
+==================================================*/
+
+.page-title-section{
+    background:#f7f7f7;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:22px 0;
+}
+
+.page-title{
+    margin:0;
+    color:#333;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:35px;
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    line-height:1.2;
+}
+
+
+/*==================================================
+                ABOUT TOP SECTION
+==================================================*/
+
+.about-top-section{
+    padding:60px 0;
+    background:#fff;
+}
+
+
+/*==================================================
+                BANNER
+==================================================*/
+
+.about-banner img{
+    width:100%;
+    display:block;
+}
+
+
+/*==================================================
+                SERVICE SIDEBAR
+==================================================*/
+
+.service-sidebar h2{
+    font-family:Georgia,serif;
+    font-size:48px;
+    font-weight:400;
+    color:#3a3a3a;
+    margin-bottom:20px;
+}
+
+.service-sidebar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.service-sidebar li{
+    border-top:1px solid #e4e4e4;
+}
+
+.service-sidebar li:last-child{
+    border-bottom:1px solid #e4e4e4;
+}
+
+.service-sidebar a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:20px 10px;
+    text-decoration:none;
+    color:#0d5d90;
+    font-size:20px;
+    transition:.3s;
+}
+
+.service-sidebar a:hover{
+    color:#0a3f65;
+    padding-left:18px;
+}
+
+.service-sidebar i{
+    font-size:15px;
+}
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media (max-width:991px){
+
+    .page-title{
+        font-size:42px;
+    }
+
+    .service-sidebar{
+        margin-top:50px;
+    }
+
+    .service-sidebar h2{
+        font-size:25px;
+    }
+
+    .service-sidebar a{
+        font-size:22px;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .page-title-section{
+        padding:15px 0;
+    }
+
+    .page-title{
+        font-size:32px;
+        text-align:center;
+    }
+
+}
+/*==================================================
+                DIFFERENCE SECTION
+==================================================*/
+
+.difference-section{
+    margin-top:60px;
+}
+
+.difference-title{
+    font-family:Georgia,serif;
+    font-size:42px;
+    font-weight:400;
+    color:#333;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.difference-section p{
+    font-size:18px;
+    line-height:1.9;
+    color:#333;
+    margin-bottom:30px;
+}
+
+.first-paragraph{
+    position:relative;
+}
+
+.drop-cap{
+    float:left;
+    font-family:Georgia,serif;
+    font-size:90px;
+    line-height:.8;
+    margin-right:12px;
+    color:#222;
+}
+
+
+/*==================================================
+                TEAM SECTION
+==================================================*/
+
+.team-section{
+    margin-top:70px;
+}
+
+.team-card{
+    margin-bottom:40px;
+}
+
+.team-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+}
+
+.team-content{
+    padding-top:18px;
+}
+
+.team-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.team-header h3{
+    margin:0;
+    font-family:Georgia,serif;
+    font-size:22px;
+    text-transform:uppercase;
+    color:#222;
+}
+
+.team-header a{
+    color:#8a8a8a;
+    font-size:22px;
+    transition:.3s;
+}
+
+.team-header a:hover{
+    color:#0b4c73;
+}
+
+.team-content h5{
+    margin-bottom:18px;
+    font-size:18px;
+    font-weight:400;
+    color:#333;
+}
+
+.team-content p{
+    font-size:17px;
+    line-height:1.9;
+    color:#333;
+}
+
+
+/*==================================================
+                TEAM CTA
+==================================================*/
+
+.team-cta{
+    margin:50px 0 60px;
+}
+
+.team-cta h2{
+    font-family:Cinzel,serif;
+    font-weight:400;
+}
+
+.cta-text{
+    font-size:20px;
+    font-weight:400;
+}
+
+.cta-text a{
+    text-decoration:underline;
+}
+
+.cfa-note{
+    font-size:12px;
+}
+
+.cta-button{
+    display:block;
+    width:100%;
+    padding:18px;
+    text-align:center;
+    text-decoration:none;
+    background:#0b4f73;
+    color:#fff;
+    transition:.3s;
+}
+
+.cta-button:hover{
+    background:#8cc63f;
+    color:#fff;
+}
+/*==================================================
+                OUR SERVICES
+==================================================*/
+
+.service-title{
+    margin:0;
+    padding:0;
+    font-family:Cinzel, serif;
+    font-size:26px;
+    font-weight:400;
+    color:#333;
+}
+
+
+/*==================================================
+                STICKY SIDEBAR
+==================================================*/
+
+.sidebar-sticky{
+    position:sticky;
+    top:0;
+    max-width:270px;
+    margin-left:0;
+    padding:0;
+    align-self:flex-start;
+}
+
+
+/*==================================================
+                SERVICE LIST
+==================================================*/
+
+.service-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.service-list li{
+    border-top:1px solid #e5e5e5;
+}
+
+.service-list li:last-child{
+    border-bottom:1px solid #e5e5e5;
+}
+
+.service-list a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px 5px;
+    text-decoration:none;
+    color:#0d5d90;
+    font-size:16px;
+    transition:.3s;
+}
+
+.service-list a:hover{
+    color:#0a3f65;
+}
+
+.service-list i{
+    font-size:14px;
+}
+
+
+/*==================================================
+                CONTACT SIDEBAR
+==================================================*/
+
+.contact-sidebar{
+    margin-top:20px;
+}
+
+.contact-sidebar h3{
+    margin-bottom:15px;
+    font-family:Cinzel, serif;
+    font-size:22px;
+    font-weight:400;
+    line-height:1.3;
+    color:#333;
+}
+
+.contact-sidebar span{
+    display:block;
+    margin-top:10px;
+}
+
+.email-link{
+    color:#0d6aa5;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.email-link:hover{
+    text-decoration:underline;
+}
+
+.address{
+    margin:15px 0;
+    font-size:14px;
+    line-height:1.5;
+    color:#555;
+}
+
+
+/*==================================================
+                BUTTONS
+==================================================*/
+
+.direction-btn,
+.crs-btn{
+    display:block;
+    padding:12px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+/* Green Button */
+
+.direction-btn{
+    background:#8cc63f;
+    margin-bottom:40px;
+}
+
+.direction-btn:hover{
+    background:#0b4f7c;
+    color:#fff;
+}
+
+/* CRS Section */
+
+.crs-box{
+    margin-top:25px;
+}
+
+.crs-box h3{
+    margin-bottom:15px;
+    font-family:Georgia, serif;
+    font-size:22px;
+    font-weight:400;
+    color:#333;
+}
+
+/* Blue Button */
+
+.crs-btn{
+    background:#0b4f7c;
+}
+
+.crs-btn:hover{
+    background:#8cc63f;
+    color:#fff;
+}
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media (max-width:991px){
+
+    .sidebar-sticky{
+        position:static;
+        max-width:100%;
+    }
+
+    .service-title{
+        margin-top:40px;
+    }
+
+}/*==================================================
+                FIXED HEADER
+==================================================*/
+
+.main-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    transition:transform .4s ease;
+}
+
+/* Header Hide Animation */
+
+.header-hide{
+    transform:translateY(-100%);
+}
+
+
+/*==================================================
+                GENERAL RESET
+==================================================*/
+
+.col-lg-4{
+    outline:none;
+}
+
+.service-list{
+    margin:0;
+    padding:0;
+}
+
+
+/*==================================================
+                TABLET RESPONSIVE
+==================================================*/
+
+@media (max-width:991px){
+
+    /* Page Title */
+
+    .page-title{
+        font-size:42px;
+    }
+
+    /* Service Sidebar */
+
+    .service-sidebar{
+        margin-top:50px;
+    }
+
+    .service-sidebar h2{
+        font-size:25px;
+    }
+
+    .service-sidebar a{
+        font-size:22px;
+    }
+
+    /* Sticky Sidebar */
+
+    .sidebar-sticky{
+        position:static;
+        max-width:100%;
+    }
+
+    .service-title{
+        margin-top:40px;
+    }
+
+}
+
+
+/*==================================================
+                MOBILE RESPONSIVE
+==================================================*/
+
+@media (max-width:767px){
+
+    .page-title-section{
+        padding:15px 0;
+    }
+
+    .page-title{
+        font-size:32px;
+        text-align:center;
+    }
+
+}
+
+
+/*==================================================
+                SMALL MOBILE
+==================================================*/
+
+@media (max-width:576px){
+
+    .team-card img{
+        height:280px;
+    }
+
+    .difference-title{
+        font-size:32px;
+    }
+
+    .team-header h3{
+        font-size:20px;
+    }
+
+    .team-content p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .contact-sidebar h3{
+        font-size:20px;
+    }
+
+    .direction-btn,
+    .crs-btn{
+        font-size:13px;
+        padding:10px;
+    }
+
+}
